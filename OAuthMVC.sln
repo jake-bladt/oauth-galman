@@ -5,6 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthMVC", "OAuthMVC\OAuthMVC.csproj", "{79EB0CAD-3609-4848-9BCE-C298382FF4C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{6D353F7F-715B-4ADF-961C-A9F7B14AF99D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{44D84A74-165D-4B43-A611-722D6C2DDAA8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\OAuthMVC-WAWS-dev.json = PublishScripts\Configurations\OAuthMVC-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44D84A74-165D-4B43-A611-722D6C2DDAA8} = {6D353F7F-715B-4ADF-961C-A9F7B14AF99D}
 	EndGlobalSection
 EndGlobal
