@@ -63,8 +63,8 @@ namespace OAuthMVC
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "",
-                ClientSecret = ""
+                ClientId = ConfigurationManager.AppSettings["google.oauth2.clientId"],
+                ClientSecret = ConfigurationManager.AppSettings["google.oauth2.clientSecret"]
             });
         }
     }
