@@ -73,3 +73,6 @@ packages/
 
 # secrets
 *.secret
+
+# databases
+[Aa]pp_[Dd]ata/
